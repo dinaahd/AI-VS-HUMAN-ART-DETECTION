@@ -5,6 +5,7 @@
 This project is an AI-powered image classification system that accurately distinguishes between AI-generated artwork and human-created artwork using a fine-tuned ResNet50V2 deep learning model.
 
 With the rapid rise of generative AI, identifying synthetic art has become critical for digital authenticity, copyright protection, and ethical AI use. This project addresses that challenge using state-of-the-art computer vision techniques.
+
 ---
 
 ## 🚀 Key Features
@@ -19,80 +20,115 @@ With the rapid rise of generative AI, identifying synthetic art has become criti
 
 - ✅ Modular, clean, and scalable codebase
 
--✅ Ready for deployment & future extension
+- ✅ Ready for deployment & future extension
+  
 ---
 
 ## 🧠 Model Architecture
 
-Backbone: ResNet50V2 (pretrained on ImageNet)
+- Backbone: ResNet50V2 (pretrained on ImageNet)
 
-Technique: Transfer Learning + Fine-tuning
+- Technique: Transfer Learning + Fine-tuning
 
-Loss Function: Binary Cross-Entropy
+- Loss Function: Binary Cross-Entropy
 
-Optimizer: Adam
+- Optimizer: Adam
 
-Evaluation Metrics:
+- Evaluation Metrics:
 
-Accuracy
+- Accuracy
 
-Confusion Matrix
+- Confusion Matrix
 
-Training vs Validation Curves
+- Training vs Validation Curves
+  
 ---
 
 ## 📂 Project Structure
 AI-VS-HUMAN-ART-DETECTION/
+
 │
+
 ├── app/
-│   └── final.py                  # Application / inference entry point
+
+│   └── final.py  # Application / inference entry point
+
 │
+
 ├── assets/
+
 │   ├── confusion_matrix.png      # Final evaluation visualization
+
 │   └── training_curve.png        # Training vs validation curves
+
 │
+
 ├── data/
+
 │   ├── train/                    # Training images
+
 │   ├── val/                      # Validation images
+
 │   └── test/                     # Test images
+
 │
+
 ├── models/
+
 │   └── resnet50v2/
+
 │       ├── confusion_matrix.png
+
 │       ├── training_curve.png
+
 │       ├── training_metrics.json
+
 │       └── val_accuracy.txt
+
 │
+
 ├── src/
+
 │   ├── dataset_prep.py           # Dataset preprocessing
+
 │   ├── train_resnet50v2_optimized.py
+
 │   ├── train_resnet50v2_ultimate.py
+
 │   ├── evaluate.py               # Model evaluation
+
 │   ├── test_evaluate_resnet50v2.py
+
 │   └── predict.py                # Prediction script
+
 │
 ├── .gitignore
+
 └── README.md
+
 ---
 
 ## 📊 Results
 
-Strong validation accuracy on unseen data
+- Strong validation accuracy on unseen data
 
-Clear separation between AI-generated and human-made images
+- Clear separation between AI-generated and human-made images
 
-Confusion matrix and learning curves demonstrate stable training and low overfitting
+- Confusion matrix and learning curves demonstrate stable training and low overfitting
 
 (See assets/ and models/resnet50v2/ for visual results)
+
 ---
 
 ## ⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/YOUR_USERNAME/AI-VS-HUMAN-ART-DETECTION.git
+git clone https://github.com/dinaahd/AI-VS-HUMAN-ART-DETECTION.git
+
 cd AI-VS-HUMAN-ART-DETECTION
 
 2️⃣ Create Virtual Environment (Recommended)
 python -m venv venv
+
 venv\Scripts\activate   # Windows
 
 3️⃣ Install Dependencies
@@ -131,6 +167,7 @@ python src/predict.py --image path/to/image.jpg
 🧠 AI ethics and research
 
 🏆 Hackathons & academic projects
+
 ---
 
 ## 🔮 Future Improvements
@@ -144,6 +181,7 @@ python src/predict.py --image path/to/image.jpg
 🔹 Larger and more diverse datasets
 
 🔹 Model benchmarking with ViT & EfficientNet
+
 ---
 
 ## 🧑‍💻 Author
@@ -153,7 +191,9 @@ Computer Science Undergraduate | AI & ML Enthusiast
 📍 India
 
 🔗 GitHub: https://github.com/dinaahd
+
 🔗 LinkedIn: https://www.linkedin.com/in/dina-ahd
+
 ---
 
 ## ⭐ Acknowledgements
@@ -163,6 +203,7 @@ ResNet architecture by Microsoft Research
 ImageNet pretrained weights
 
 Open-source AI & ML community
+
 ---
 
 ## 📜 License
