@@ -1,0 +1,41 @@
+# --------------------
+# Python virtual environment
+# --------------------
+venv/
+.env
+
+# --------------------
+# Python cache files
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+
+# --------------------
+# Model weights (do not commit)
+# --------------------
+*.h5
+*.pt
+*.ckpt
+*.pth
+
+# --------------------
+# Dataset images (keep structure only)
+# --------------------
+data/train/*
+data/val/*
+data/test/*
+!data/train/.gitkeep
+!data/val/.gitkeep
+!data/test/.gitkeep
+
+# --------------------
+# Logs and temp files
+# --------------------
+*.log
+
+# --------------------
+# OS generated files
+# --------------------
+.DS_Store
+Thumbs.db
